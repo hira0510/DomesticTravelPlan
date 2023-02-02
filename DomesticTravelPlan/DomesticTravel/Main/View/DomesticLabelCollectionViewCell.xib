@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DomesticLabelCollectionViewCell" reuseIdentifier="" id="gTV-IL-0wX" customClass="DomesticLabelCollectionViewCell" customModule="DomesticTravelPlan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="470"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="470"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llT-rN-184">
+                        <rect key="frame" x="37.5" y="0.0" width="300" height="470"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="MZd-iQ-2Dv">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="470"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名稱：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltx-Eq-pwT">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="31"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="22"/>
+                                        <color key="textColor" red="0.35686274509803922" green="0.22745098039215686" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJd-pz-SE9">
+                                        <rect key="frame" x="0.0" y="66.5" width="300" height="36"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.35871264403238495" green="0.22737062961477328" blue="0.64895304568527923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官方网站：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDO-YP-kZd">
+                                        <rect key="frame" x="0.0" y="137.5" width="300" height="36"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.35871264400000002" green="0.22737062960000001" blue="0.64895304570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suW-hJ-2Xe">
+                                        <rect key="frame" x="0.0" y="209" width="300" height="24"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.35871264400000002" green="0.22737062960000001" blue="0.64895304570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="介紹：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvm-2C-xRr">
+                                        <rect key="frame" x="0.0" y="268" width="300" height="24"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.35871264403238495" green="0.22737062961477328" blue="0.64895304568527923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="價格：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPN-3p-Qsp">
+                                        <rect key="frame" x="0.0" y="327.5" width="300" height="24"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.35871264403238495" green="0.22737062961477328" blue="0.64895304568527923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服務介紹：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03O-5B-G66">
+                                        <rect key="frame" x="0.0" y="386.5" width="300" height="24"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.35871264403238495" green="0.22737062961477328" blue="0.64895304568527923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="停車位：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Y7-Jf-Vp5">
+                                        <rect key="frame" x="0.0" y="446" width="300" height="24"/>
+                                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                        <color key="textColor" red="0.35871264403238495" green="0.22737062961477328" blue="0.64895304568527923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rye-jd-foi">
+                                <rect key="frame" x="0.0" y="66.5" width="300" height="36"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.35871264400000002" green="0.22737062960000001" blue="0.64895304570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickAddBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="IWL-Vj-yyc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-jx-gHu">
+                                <rect key="frame" x="0.0" y="137.5" width="300" height="36"/>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.35871264400000002" green="0.22737062960000001" blue="0.64895304570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickWebBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="5fT-bW-Zb1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rye-jd-foi" firstAttribute="top" secondItem="iJd-pz-SE9" secondAttribute="top" id="2Yg-Wq-Tqo"/>
+                            <constraint firstItem="Rye-jd-foi" firstAttribute="leading" secondItem="iJd-pz-SE9" secondAttribute="leading" id="4v5-AQ-sQh"/>
+                            <constraint firstItem="MZd-iQ-2Dv" firstAttribute="top" secondItem="llT-rN-184" secondAttribute="top" id="6Zo-td-ROO"/>
+                            <constraint firstItem="e1c-jx-gHu" firstAttribute="bottom" secondItem="WDO-YP-kZd" secondAttribute="bottom" id="8ue-b0-clB"/>
+                            <constraint firstAttribute="bottom" secondItem="MZd-iQ-2Dv" secondAttribute="bottom" id="BH1-bJ-Fnm"/>
+                            <constraint firstItem="e1c-jx-gHu" firstAttribute="leading" secondItem="WDO-YP-kZd" secondAttribute="leading" id="LcW-rT-RVV"/>
+                            <constraint firstItem="e1c-jx-gHu" firstAttribute="top" secondItem="WDO-YP-kZd" secondAttribute="top" id="MoV-BO-nE7"/>
+                            <constraint firstAttribute="trailing" secondItem="MZd-iQ-2Dv" secondAttribute="trailing" id="Nuz-UK-4Iq"/>
+                            <constraint firstItem="Rye-jd-foi" firstAttribute="trailing" secondItem="iJd-pz-SE9" secondAttribute="trailing" id="Rre-wY-eD9"/>
+                            <constraint firstItem="Rye-jd-foi" firstAttribute="bottom" secondItem="iJd-pz-SE9" secondAttribute="bottom" id="anB-TG-2if"/>
+                            <constraint firstItem="MZd-iQ-2Dv" firstAttribute="leading" secondItem="llT-rN-184" secondAttribute="leading" id="ieb-Qh-g55"/>
+                            <constraint firstItem="e1c-jx-gHu" firstAttribute="trailing" secondItem="WDO-YP-kZd" secondAttribute="trailing" id="spi-PI-Pcj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="llT-rN-184" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="26L-Kf-z2u"/>
+                <constraint firstAttribute="bottom" secondItem="llT-rN-184" secondAttribute="bottom" id="EoY-CB-wdB"/>
+                <constraint firstItem="llT-rN-184" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="300:375" id="VNg-4K-zyh"/>
+                <constraint firstItem="llT-rN-184" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mRf-F9-NVs"/>
+            </constraints>
+            <size key="customSize" width="320" height="471"/>
+            <connections>
+                <outlet property="addBtn" destination="Rye-jd-foi" id="hv6-9H-P1N"/>
+                <outlet property="addLbl" destination="iJd-pz-SE9" id="yYU-FX-snQ"/>
+                <outlet property="descriptionLbl" destination="Wvm-2C-xRr" id="AIb-Dc-uEw"/>
+                <outlet property="moneyLbl" destination="XPN-3p-Qsp" id="emS-aO-PEa"/>
+                <outlet property="nameLbl" destination="ltx-Eq-pwT" id="3DK-yf-Dn2"/>
+                <outlet property="parkingSpaceLbl" destination="9Y7-Jf-Vp5" id="feN-cA-hkH"/>
+                <outlet property="serviceInfoLbl" destination="03O-5B-G66" id="fe1-8F-PAp"/>
+                <outlet property="telLbl" destination="suW-hJ-2Xe" id="XP6-Ay-Ez3"/>
+                <outlet property="webBtn" destination="e1c-jx-gHu" id="3Qg-S8-POR"/>
+                <outlet property="webLbl" destination="WDO-YP-kZd" id="oXz-QF-z9I"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="90.401785714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

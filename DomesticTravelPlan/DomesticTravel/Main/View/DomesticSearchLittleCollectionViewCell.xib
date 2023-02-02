@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DomesticSearchLittleCollectionViewCell" reuseIdentifier="DomesticSearchLittleCollectionViewCell" id="gTV-IL-0wX" customClass="DomesticSearchLittleCollectionViewCell" customModule="DomesticTravelPlan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="25"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="25"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmU-ek-70q">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mop-uN-xAR">
+                                <rect key="frame" x="8" y="0.0" width="44" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68627450980392157" green="0.51764705882352935" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mop-uN-xAR" secondAttribute="bottom" id="AOb-pu-TAl"/>
+                            <constraint firstItem="mop-uN-xAR" firstAttribute="leading" secondItem="QmU-ek-70q" secondAttribute="leading" constant="8" id="FkN-qT-Lf1"/>
+                            <constraint firstItem="mop-uN-xAR" firstAttribute="top" secondItem="QmU-ek-70q" secondAttribute="top" id="YHb-jN-gwj"/>
+                            <constraint firstAttribute="trailing" secondItem="mop-uN-xAR" secondAttribute="trailing" constant="8" id="oOH-ve-j2f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QmU-ek-70q" secondAttribute="trailing" id="Mgn-9W-lBj"/>
+                <constraint firstAttribute="bottom" secondItem="QmU-ek-70q" secondAttribute="bottom" id="ZpG-wt-znH"/>
+                <constraint firstItem="QmU-ek-70q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bYP-K2-Wkc"/>
+                <constraint firstItem="QmU-ek-70q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jLq-ao-Ddl"/>
+            </constraints>
+            <size key="customSize" width="69" height="31"/>
+            <connections>
+                <outlet property="bgView" destination="QmU-ek-70q" id="YGx-Se-yGM"/>
+                <outlet property="titleLabel" destination="mop-uN-xAR" id="w6l-IS-g6z"/>
+            </connections>
+            <point key="canvasLocation" x="118.11594202898551" y="146.98660714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

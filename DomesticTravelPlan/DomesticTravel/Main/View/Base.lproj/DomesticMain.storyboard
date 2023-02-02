@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Domestic Landing View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DomesticLandingViewController" id="BYZ-38-t0r" customClass="DomesticLandingViewController" customModule="DomesticTravelPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tpImage" translatesAutoresizingMaskIntoConstraints="NO" id="6Kj-xp-CVq">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Kj-xp-CVq" secondAttribute="height" id="QuM-te-dWX"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBg-1S-fR3" customClass="ShimmeringView" customModule="DomesticTravelPlan" customModuleProvider="target">
+                                <rect key="frame" x="5" y="532" width="365" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BBg-1S-fR3" secondAttribute="height" multiplier="365:36" id="u5K-kl-bWU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BBg-1S-fR3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="365:375" id="4VU-so-hgf"/>
+                            <constraint firstItem="6Kj-xp-CVq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Apk-bK-m7X"/>
+                            <constraint firstItem="6Kj-xp-CVq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="B4d-hj-Bm9"/>
+                            <constraint firstItem="BBg-1S-fR3" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1100:667" id="QYs-KU-SuL"/>
+                            <constraint firstItem="BBg-1S-fR3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V50-Jn-pbk"/>
+                            <constraint firstItem="6Kj-xp-CVq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dqr-XA-zno"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="views" destination="BKh-CC-guG" id="wse-NZ-myk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="BKh-CC-guG" customClass="DomesticLandingViews" customModule="DomesticTravelPlan" customModuleProvider="target">
+                    <connections>
+                        <outlet property="announcementView" destination="BBg-1S-fR3" id="D3Y-e6-LIN"/>
+                        <outlet property="mImageView" destination="6Kj-xp-CVq" id="vP3-Bg-AfT"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-12062" y="27"/>
+        </scene>
+        <!--Hotel-->
+        <scene sceneID="fZl-41-6EZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Hotel" id="d7E-ML-GiZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="住宿" image="house" catalog="system" selectedImage="house.fill" id="wbw-y6-qXt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="618-JY-t6H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11547" y="504"/>
+        </scene>
+        <!--Attractions-->
+        <scene sceneID="qaL-97-Zf1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Attractions" id="eNW-wc-7EL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="景点" image="map" catalog="system" selectedImage="map.fill" id="XYG-TM-Xba"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7e-Xr-XNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11303" y="504"/>
+        </scene>
+        <!--Delicacy-->
+        <scene sceneID="uSA-FE-ycG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Delicacy" id="fDD-oA-Syk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="餐厅" image="hare" catalog="system" selectedImage="hare.fill" id="Oym-gF-811"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DnB-fE-2uo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11049" y="504"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="5C7-rR-pLN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favorite" id="iUy-L0-YD9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="收藏" image="heart" catalog="system" selectedImage="heart.fill" id="3Ty-Nd-jhC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pv-5E-WDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10807" y="504"/>
+        </scene>
+        <!--Lottery-->
+        <scene sceneID="GrA-P0-nUc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Lottery" id="Ipp-9h-Akp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="选择" image="checkmark.circle" catalog="system" selectedImage="checkmark.circle.fill" id="58x-fX-cwz">
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c49-x7-Qlj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10572" y="504"/>
+        </scene>
+        <!--Domestic Main Tab Controller-->
+        <scene sceneID="CcU-c4-Qw6">
+            <objects>
+                <tabBarController storyboardIdentifier="DomesticMainTabController" id="T7m-c2-qsw" customClass="DomesticMainTabController" customModule="DomesticTravelPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="VPO-vr-ylY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.83112817881058676" green="0.81728606970131801" blue="1" alpha="0.8113470014357409" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.49524091863307823" green="0.50196078430000002" blue="0.92227691857993199" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="d7E-ML-GiZ" kind="relationship" relationship="viewControllers" id="u1c-SG-lpd"/>
+                        <segue destination="eNW-wc-7EL" kind="relationship" relationship="viewControllers" id="L7l-vO-fgD"/>
+                        <segue destination="fDD-oA-Syk" kind="relationship" relationship="viewControllers" id="zlH-Zc-VrB"/>
+                        <segue destination="iUy-L0-YD9" kind="relationship" relationship="viewControllers" id="uQR-ko-e6d"/>
+                        <segue destination="Ipp-9h-Akp" kind="relationship" relationship="viewControllers" id="ZsL-T1-DZi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P37-pY-F5z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11048" y="27"/>
+        </scene>
+        <!--Domestic Web View Controller-->
+        <scene sceneID="Bbk-2S-Gf8">
+            <objects>
+                <viewController storyboardIdentifier="DomesticWebViewController" modalPresentationStyle="overFullScreen" id="mIF-Eb-Oe1" customClass="DomesticWebViewController" customModule="DomesticTravelPlan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L8M-SV-gk7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r3-49-mW5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="rBd-Pq-lsW">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="icon_back" id="N4c-xt-lpt">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="didClickDismissBtn:" destination="mIF-Eb-Oe1" id="Sef-WQ-EOG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="收起" id="lmd-Lh-NIY">
+                                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="didClickHidden:" destination="mIF-Eb-Oe1" id="cUa-vg-j12"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="piY-sM-Xpk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n2P-Bs-4dT"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0r3-49-mW5" firstAttribute="leading" secondItem="L8M-SV-gk7" secondAttribute="leading" id="5A4-W1-kEj"/>
+                            <constraint firstItem="n2P-Bs-4dT" firstAttribute="trailing" secondItem="0r3-49-mW5" secondAttribute="trailing" id="AAG-Xi-nlh"/>
+                            <constraint firstItem="0r3-49-mW5" firstAttribute="top" secondItem="piY-sM-Xpk" secondAttribute="bottom" id="ALF-0s-t43"/>
+                            <constraint firstItem="0r3-49-mW5" firstAttribute="top" secondItem="n2P-Bs-4dT" secondAttribute="top" id="ENB-oa-oI0"/>
+                            <constraint firstItem="piY-sM-Xpk" firstAttribute="top" secondItem="L8M-SV-gk7" secondAttribute="top" id="EkS-qS-IQ4"/>
+                            <constraint firstItem="n2P-Bs-4dT" firstAttribute="trailing" secondItem="piY-sM-Xpk" secondAttribute="trailing" id="Vmp-TA-109"/>
+                            <constraint firstItem="piY-sM-Xpk" firstAttribute="leading" secondItem="n2P-Bs-4dT" secondAttribute="leading" id="w8q-U4-r1N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navBar" destination="0r3-49-mW5" id="AfK-zF-ddc"/>
+                        <outlet property="navHiddenButtonItem" destination="lmd-Lh-NIY" id="S9E-aF-XbY"/>
+                        <outlet property="topView" destination="piY-sM-Xpk" id="LiE-nb-61N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7KX-zb-gcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10233.333333333334" y="26.785714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="hare" catalog="system" width="128" height="92"/>
+        <image name="hare.fill" catalog="system" width="128" height="91"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="icon_back" width="12" height="21"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
+        <image name="tpImage" width="360" height="360"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

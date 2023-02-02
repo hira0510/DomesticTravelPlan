@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DelicacyMainCollectionViewCell" reuseIdentifier="DelicacyMainCollectionViewCell" id="gTV-IL-0wX" customClass="DelicacyMainCollectionViewCell" customModule="DomesticTravelPlan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SFY-4x-9lH">
+                        <rect key="frame" x="10" y="0.0" width="355" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjB-JA-o80">
+                                <rect key="frame" x="110" y="5" width="240" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-6C-DrE">
+                                        <rect key="frame" x="0.0" y="0.0" width="203.5" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uu1-lN-Zbb">
+                                                <rect key="frame" x="0.0" y="0.0" width="203.5" height="27"/>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="19"/>
+                                                <color key="textColor" white="0.096893518149447286" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtt-4c-xgE">
+                                                <rect key="frame" x="0.0" y="49" width="203.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="15"/>
+                                                <color key="textColor" white="0.16333443777901785" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGP-Jg-Nb7">
+                                        <rect key="frame" x="208.5" y="19.5" width="31.5" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zGP-Jg-Nb7" secondAttribute="height" multiplier="1:1" id="R3H-42-dcS"/>
+                                        </constraints>
+                                        <state key="normal" image="Favorites"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zGP-Jg-Nb7" firstAttribute="leading" secondItem="o1c-6C-DrE" secondAttribute="trailing" constant="5" id="EjU-IB-kca"/>
+                                    <constraint firstItem="o1c-6C-DrE" firstAttribute="top" secondItem="mjB-JA-o80" secondAttribute="top" id="ata-oj-for"/>
+                                    <constraint firstItem="zGP-Jg-Nb7" firstAttribute="width" secondItem="mjB-JA-o80" secondAttribute="width" multiplier="30:230" id="je0-rn-rka"/>
+                                    <constraint firstItem="zGP-Jg-Nb7" firstAttribute="centerY" secondItem="o1c-6C-DrE" secondAttribute="centerY" id="m85-YK-BUS"/>
+                                    <constraint firstAttribute="bottom" secondItem="o1c-6C-DrE" secondAttribute="bottom" id="o4P-Ef-Ykw"/>
+                                    <constraint firstItem="o1c-6C-DrE" firstAttribute="leading" secondItem="mjB-JA-o80" secondAttribute="leading" id="qqH-vw-Alc"/>
+                                    <constraint firstAttribute="trailing" secondItem="zGP-Jg-Nb7" secondAttribute="trailing" id="sGe-oM-Mxw"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImage" translatesAutoresizingMaskIntoConstraints="NO" id="5d9-Rt-J10">
+                                <rect key="frame" x="5" y="5" width="100" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5d9-Rt-J10" secondAttribute="height" multiplier="10:7" id="SwE-Vl-cFP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.6588235294117647" blue="1" alpha="0.39018117172385131" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mjB-JA-o80" secondAttribute="bottom" constant="5" id="7wm-kA-k9q"/>
+                            <constraint firstItem="mjB-JA-o80" firstAttribute="leading" secondItem="5d9-Rt-J10" secondAttribute="trailing" constant="5" id="8PI-eN-Y07"/>
+                            <constraint firstAttribute="trailing" secondItem="mjB-JA-o80" secondAttribute="trailing" constant="5" id="QPu-zj-yFW"/>
+                            <constraint firstAttribute="bottom" secondItem="5d9-Rt-J10" secondAttribute="bottom" constant="5" id="SGX-F8-kh2"/>
+                            <constraint firstItem="5d9-Rt-J10" firstAttribute="leading" secondItem="SFY-4x-9lH" secondAttribute="leading" constant="5" id="YiW-I9-8vC"/>
+                            <constraint firstItem="5d9-Rt-J10" firstAttribute="top" secondItem="SFY-4x-9lH" secondAttribute="top" constant="5" id="ksI-kD-f7y"/>
+                            <constraint firstItem="mjB-JA-o80" firstAttribute="top" secondItem="SFY-4x-9lH" secondAttribute="top" constant="5" id="v5I-dD-gPi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SFY-4x-9lH" secondAttribute="trailing" constant="10" id="GAy-la-1An"/>
+                <constraint firstItem="SFY-4x-9lH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="YbC-Qp-1za"/>
+                <constraint firstItem="SFY-4x-9lH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="duz-Zz-FO4"/>
+                <constraint firstAttribute="bottom" secondItem="SFY-4x-9lH" secondAttribute="bottom" id="kF8-9g-vGz"/>
+            </constraints>
+            <size key="customSize" width="375" height="73"/>
+            <connections>
+                <outlet property="addLabel" destination="jtt-4c-xgE" id="wFJ-ZS-vPZ"/>
+                <outlet property="bgView" destination="SFY-4x-9lH" id="j5y-yF-Agu"/>
+                <outlet property="favoriteButton" destination="zGP-Jg-Nb7" id="Qy3-eA-zwN"/>
+                <outlet property="sImageView" destination="5d9-Rt-J10" id="Kiw-w5-vzX"/>
+                <outlet property="sLabel" destination="uu1-lN-Zbb" id="V2e-Mt-3Eh"/>
+            </connections>
+            <point key="canvasLocation" x="367.39130434782612" y="160.04464285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Favorites" width="32" height="30"/>
+        <image name="noImage" width="180" height="180"/>
+    </resources>
+</document>
