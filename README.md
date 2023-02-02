@@ -1,11 +1,15 @@
-# README #
+# DomesticTravelPlan
+### 2020/7/29製作
 
-上傳到store
-可以開PWA
+| 使用 |  |  |
+|:---:|:---:|:---:|
+| RxSwift | RxCocoa | Moya/RxSwift |
+| ObjectMapper | Kingfisher | SQLite |
+| TYCyclePagerView | SnapKit | Firebase |
+| GoogleUtilities | 全局滑動返回 | UICollectionView |
+| WebKit | MapKit | Shimmer |
+| CAPSPageMenu | 偵測Store版本更新窗 | Firebase推播 |
 
-蘋果:gfmxakfe275@hotmail.com
-密碼:gOdazMin22
-信箱密碼:MBOC0443cd
-三個問題movie/car/boss  snow/Jaguar/James
-手機+852 6764 4472
-▲個人開發者帳號
+![DomesticTravelPlan](https://user-images.githubusercontent.com/56010051/216288310-35d2b209-b326-4d30-b074-037185a2247e.png)
+
+https://user-images.githubusercontent.com/56010051/216289265-847b69df-795d-47ca-977a-3c00041d3010.mov
